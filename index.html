@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Risk?</title>
+  <link rel="icon" href="assets/pic1.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <div class="gauge-stage" oncontextmenu="return false">
+      <img class="gauge-image" src="assets/pic.png" alt="Risk gauge" draggable="false" />
+      <img class="needle-image" id="needleImage" src="assets/pic2.png" alt="" role="presentation" draggable="false" />
+    </div>
+    <div class="controls">
+      <button type="button" class="spin-btn" id="spinBtn" aria-label="Spin the risk gauge needle">Spin</button>
+      <p class="result" id="result" aria-live="polite">Risk: <span class="result-value" id="resultValue">—</span></p>
+      <div class="ca-row">
+        <p class="ca-coming">CA: coming soon</p>
+        <button type="button" class="copy-ca-btn" id="copyCaBtn" aria-label="Copy CA text">Copy</button>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
